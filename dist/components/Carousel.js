@@ -183,12 +183,12 @@ function Carousel(_ref) {
         console.log(item);
       }
     }), isPaused && /*#__PURE__*/_react.default.createElement("div", {
-      className: "pause-icon pause",
-      style: {
-        color: pauseIconColor ? pauseIconColor : "white",
-        fontSize: pauseIconSize ? pauseIconSize : "40px"
-      }
-    }, "WW"), /*#__PURE__*/_react.default.createElement("div", {
+      // className: "pause-icon pause",
+      // style: {
+      //   color: pauseIconColor ? pauseIconColor : "white",
+      //   fontSize: pauseIconSize ? pauseIconSize : "40px"
+      // }
+    }, ""), /*#__PURE__*/_react.default.createElement("div", {
       className: "carousel-caption-".concat(captionPosition ? captionPosition : "bottom"),
       style: captionStyle,
       dangerouslySetInnerHTML: {
