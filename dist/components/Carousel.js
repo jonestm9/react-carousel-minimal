@@ -182,10 +182,10 @@ function Carousel(_ref) {
         window.location.href = item.link;
       },
       onMouseLeave: e => {
-          console.log('mouse no longer hovering');
+        document.body.style.cursor = "default";
       },
       onMouseEnter: e => {
-        console.log('mouse hovering');
+        document.body.style.cursor = "pointer";
     },
     }), isPaused && /*#__PURE__*/_react.default.createElement("div", {
       className: "pause-icon pause",
