@@ -140,21 +140,21 @@ function Carousel({
                     maxWidth: width ? width : "600px",
                     maxHeight: height ? height : "400px",
                   }}
-                  onMouseDown={(e) => {
-                    automatic && setIsPaused(true);
-                  }}
-                  onMouseUp={(e) => {
-                    automatic && setIsPaused(false);
-                  }}
-                  onMouseLeave={(e) => {
-                    automatic && setIsPaused(false);
-                  }}
-                  onTouchStart={(e) => {
-                    automatic && setIsPaused(true);
-                  }}
-                  onTouchEnd={(e) => {
-                    automatic && setIsPaused(false);
-                  }}
+                  // onMouseDown={(e) => {
+                  //   automatic && setIsPaused(true);
+                  // }}
+                  // onMouseUp={(e) => {
+                  //   automatic && setIsPaused(false);
+                  // }}
+                  // onMouseLeave={(e) => {
+                  //   automatic && setIsPaused(false);
+                  // }}
+                  // onTouchStart={(e) => {
+                  //   automatic && setIsPaused(true);
+                  // }}
+                  // onTouchEnd={(e) => {
+                  //   automatic && setIsPaused(false);
+                  // }}
                   key={index}
                 >
                   {slideNumber && (
@@ -179,7 +179,7 @@ function Carousel({
                         fontSize: pauseIconSize ? pauseIconSize : "40px",
                       }}
                     >
-                      II
+                      W
                     </div>
                   )}
                   <div
