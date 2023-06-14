@@ -159,7 +159,7 @@ function Carousel({
                 >
                   {slideNumber && (
                     <div className="slide-number" style={slideNumberStyle}>
-                      {index + 1} / {data.length}
+                      {index + 1} /// {data.length}
                     </div>
                   )}
                   <img

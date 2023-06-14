@@ -184,7 +184,7 @@ function Carousel(_ref) {
         color: pauseIconColor ? pauseIconColor : "white",
         fontSize: pauseIconSize ? pauseIconSize : "40px"
       }
-    }, "II"), /*#__PURE__*/_react.default.createElement("div", {
+    }, "WW"), /*#__PURE__*/_react.default.createElement("div", {
       className: "carousel-caption-".concat(captionPosition ? captionPosition : "bottom"),
       style: captionStyle,
       dangerouslySetInnerHTML: {
