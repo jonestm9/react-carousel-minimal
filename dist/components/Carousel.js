@@ -146,27 +146,27 @@ function Carousel(_ref) {
     }
   }, data.map((item, index) => {
     return /*#__PURE__*/_react.default.createElement("div", {
-      className: "carousel-item fade",
-      style: {
-        maxWidth: width ? width : "600px",
-        maxHeight: height ? height : "400px"
-      },
-      onMouseDown: e => {
-        automatic && setIsPaused(true);
-      },
-      onMouseUp: e => {
-        automatic && setIsPaused(false);
-      },
-      onMouseLeave: e => {
-        automatic && setIsPaused(false);
-      },
-      onTouchStart: e => {
-        automatic && setIsPaused(true);
-      },
-      onTouchEnd: e => {
-        automatic && setIsPaused(false);
-      },
-      key: index
+      // className: "carousel-item fade",
+      // style: {
+      //   maxWidth: width ? width : "600px",
+      //   maxHeight: height ? height : "400px"
+      // },
+      // onMouseDown: e => {
+      //   automatic && setIsPaused(true);
+      // },
+      // onMouseUp: e => {
+      //   automatic && setIsPaused(false);
+      // },
+      // onMouseLeave: e => {
+      //   automatic && setIsPaused(false);
+      // },
+      // onTouchStart: e => {
+      //   automatic && setIsPaused(true);
+      // },
+      // onTouchEnd: e => {
+      //   automatic && setIsPaused(false);
+      // },
+      // key: index
     }, slideNumber && /*#__PURE__*/_react.default.createElement("div", {
       className: "slide-number",
       style: slideNumberStyle
@@ -177,6 +177,10 @@ function Carousel(_ref) {
       style: {
         borderRadius: radius,
         objectFit: slideImageFit ? slideImageFit : "cover"
+      },
+      onClick: e => {
+        console.log('open page now');
+        console.log(item);
       }
     }), isPaused && /*#__PURE__*/_react.default.createElement("div", {
       className: "pause-icon pause",
