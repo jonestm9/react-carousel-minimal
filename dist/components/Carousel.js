@@ -170,7 +170,7 @@ function Carousel(_ref) {
     }, slideNumber && /*#__PURE__*/_react.default.createElement("div", {
       className: "slide-number",
       style: slideNumberStyle
-    }, index + 1, " /// ", data.length), /*#__PURE__*/_react.default.createElement("img", {
+    }, index + 1, " / ", data.length), /*#__PURE__*/_react.default.createElement("img", {
       src: item.image,
       alt: item.caption,
       className: "carousel-image",
@@ -180,7 +180,13 @@ function Carousel(_ref) {
       },
       onClick: e => {
         window.location.href = item.link;
-      }
+      },
+      onMouseLeave: e => {
+          console.log('mouse no longer hovering');
+      },
+      onMouseEnter: e => {
+        console.log('mouse hovering');
+    },
     }), isPaused && /*#__PURE__*/_react.default.createElement("div", {
       className: "pause-icon pause",
       style: {
