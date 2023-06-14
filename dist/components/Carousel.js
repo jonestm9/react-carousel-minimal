@@ -179,8 +179,7 @@ function Carousel(_ref) {
         objectFit: slideImageFit ? slideImageFit : "cover"
       },
       onClick: e => {
-        console.log('open page now');
-        console.log(item);
+        window.location.href = item.link;
       }
     }), isPaused && /*#__PURE__*/_react.default.createElement("div", {
       className: "pause-icon pause",
