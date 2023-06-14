@@ -146,11 +146,11 @@ function Carousel(_ref) {
     }
   }, data.map((item, index) => {
     return /*#__PURE__*/_react.default.createElement("div", {
-      // className: "carousel-item fade",
-      // style: {
-      //   maxWidth: width ? width : "600px",
-      //   maxHeight: height ? height : "400px"
-      // },
+      className: "carousel-item fade",
+      style: {
+        maxWidth: width ? width : "600px",
+        maxHeight: height ? height : "400px"
+      },
       // onMouseDown: e => {
       //   automatic && setIsPaused(true);
       // },
@@ -170,7 +170,7 @@ function Carousel(_ref) {
     }, slideNumber && /*#__PURE__*/_react.default.createElement("div", {
       className: "slide-number",
       style: slideNumberStyle
-    }, index + 1, " / ", data.length), /*#__PURE__*/_react.default.createElement("img", {
+    }, index + 1, " /// ", data.length), /*#__PURE__*/_react.default.createElement("img", {
       src: item.image,
       alt: item.caption,
       className: "carousel-image",
@@ -183,12 +183,12 @@ function Carousel(_ref) {
         console.log(item);
       }
     }), isPaused && /*#__PURE__*/_react.default.createElement("div", {
-      // className: "pause-icon pause",
-      // style: {
-      //   color: pauseIconColor ? pauseIconColor : "white",
-      //   fontSize: pauseIconSize ? pauseIconSize : "40px"
-      // }
-    }, ""), /*#__PURE__*/_react.default.createElement("div", {
+      className: "pause-icon pause",
+      style: {
+        color: pauseIconColor ? pauseIconColor : "white",
+        fontSize: pauseIconSize ? pauseIconSize : "40px"
+      }
+    }, "WW"), /*#__PURE__*/_react.default.createElement("div", {
       className: "carousel-caption-".concat(captionPosition ? captionPosition : "bottom"),
       style: captionStyle,
       dangerouslySetInnerHTML: {
